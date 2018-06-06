@@ -1,20 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author mica
- */
+import Media.Radio;
+import Media.Television;
+
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+    
+        
+        Television TV = new Television();
+        TV.setVolume(8);
+        TV.setCurrentProgram(16);
+        TV.setTurnOn(true);
+        System.out.println("");
+        
+        Radio Play = new Radio(9.81, 600, "A");
+        Play.showData();
+//        Play.setFmFrequency(Play.getFmFrequency());
+//        Play.setAmFrequency(Play.getAmFrequency());
+        
+        
+        
     }
     
 }
